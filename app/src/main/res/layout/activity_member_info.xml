@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".com.example.mem.Member_info">
+
+    <TextView
+        android:id="@+id/textViewMemId"
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="6dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewMemName"
+        app:layout_constraintStart_toStartOf="@+id/textViewMemName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <TextView
+        android:id="@+id/textViewDai"
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewMemParents"
+        app:layout_constraintStart_toStartOf="@+id/textViewMemParents"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPat" />
+
+    <TextView
+        android:id="@+id/textViewMemSex"
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewMemBorn"
+        app:layout_constraintStart_toStartOf="@+id/textViewMemBorn"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGenId" />
+
+    <TextView
+        android:id="@+id/textViewMemBorn"
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewMemAdd"
+        app:layout_constraintStart_toStartOf="@+id/textViewMemAdd"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMemSex" />
+
+    <TextView
+        android:id="@+id/textViewGenId"
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewMemSex"
+        app:layout_constraintStart_toStartOf="@+id/textViewMemSex"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMemName" />
+
+    <TextView
+        android:id="@+id/textViewMemAdd"
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewPat"
+        app:layout_constraintStart_toStartOf="@+id/textViewPat"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMemBorn" />
+
+    <TextView
+        android:id="@+id/textViewPat"
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:text="该单身狗目前还没有对象"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDai"
+        app:layout_constraintStart_toStartOf="@+id/textViewDai"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMemAdd" />
+
+    <TextView
+        android:id="@+id/textViewMemChidren"
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:text="暂时还没有"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMemParents" />
+
+    <TextView
+        android:id="@+id/textViewMemParents"
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewMemChidren"
+        app:layout_constraintStart_toStartOf="@+id/textViewMemChidren"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDai" />
+
+    <TextView
+        android:id="@+id/textViewMemName"
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewGenId"
+        app:layout_constraintStart_toStartOf="@+id/textViewGenId"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMemId" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="成员ID"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView21"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="成员名"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView22"
+        app:layout_constraintEnd_toEndOf="@+id/textView20"
+        app:layout_constraintStart_toStartOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="所属族谱"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView23"
+        app:layout_constraintEnd_toEndOf="@+id/textView21"
+        app:layout_constraintStart_toStartOf="@+id/textView21"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="性别"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView24"
+        app:layout_constraintEnd_toEndOf="@+id/textView22"
+        app:layout_constraintStart_toStartOf="@+id/textView22"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="出生日期"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView25"
+        app:layout_constraintEnd_toEndOf="@+id/textView23"
+        app:layout_constraintStart_toStartOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="出生地"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView26"
+        app:layout_constraintEnd_toEndOf="@+id/textView24"
+        app:layout_constraintStart_toStartOf="@+id/textView24"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="配偶"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView27"
+        app:layout_constraintEnd_toEndOf="@+id/textView25"
+        app:layout_constraintStart_toStartOf="@+id/textView25"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="辈分"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView28"
+        app:layout_constraintEnd_toEndOf="@+id/textView26"
+        app:layout_constraintStart_toStartOf="@+id/textView26"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="双亲"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView30"
+        app:layout_constraintEnd_toEndOf="@+id/textView27"
+        app:layout_constraintStart_toStartOf="@+id/textView27"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="子女"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView28"
+        app:layout_constraintStart_toStartOf="@+id/textView28"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButtonChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        app:backgroundTint="#8BC34A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_change_color_black_24dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

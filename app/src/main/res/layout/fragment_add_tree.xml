@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".AddTreeFragment">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="添加族谱"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTreeName"
+        android:layout_width="315dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="108dp"
+        android:ems="10"
+        android:hint="族谱名"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+    <EditText
+        android:id="@+id/editTextPeople"
+        android:layout_width="315dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="族谱人数"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTreeName"
+        app:layout_constraintStart_toStartOf="@+id/editTextTreeName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTreeName" />
+
+    <EditText
+        android:id="@+id/editTextMaker"
+        android:layout_width="315dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="创建人"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPeople" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="315dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="80dp"
+        android:text="添  加"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTreeName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextTreeName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMaker" />
+</androidx.constraintlayout.widget.ConstraintLayout>

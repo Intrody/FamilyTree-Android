@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/treeFragment">
+    <fragment
+        android:id="@+id/addTreeFragment"
+        android:name="com.example.familytree.AddTreeFragment"
+        android:label="添加族谱"
+        tools:layout="@layout/fragment_add_tree" />
+    <fragment
+        android:id="@+id/treeFragment"
+        android:name="com.example.familytree.TreeFragment"
+        android:label="族谱表"
+        tools:layout="@layout/fragment_tree">
+        <action
+            android:id="@+id/action_treeFragment_to_addTreeFragment"
+            app:destination="@id/addTreeFragment"
+            app:enterAnim="@anim/fragment_fade_enter" />
+    </fragment>
+</navigation>

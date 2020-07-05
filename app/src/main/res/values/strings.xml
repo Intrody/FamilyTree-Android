@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">电子族谱</string>
+    <string name="button">Button</string>
+    <string name="toast1">你点了点按钮，但什么也没有发生。</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

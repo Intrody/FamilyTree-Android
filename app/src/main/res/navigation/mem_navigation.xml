@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mem_navigation"
+    app:startDestination="@id/mememberFragment">
+
+    <fragment
+        android:id="@+id/mememberFragment"
+        android:name="com.example.familytree.com.example.mem.MememberFragment"
+        android:label="成员浏览"
+        tools:layout="@layout/fragment_memember">
+        <action
+            android:id="@+id/action_mememberFragment_to_addMemFragment"
+            app:destination="@id/addMemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMemFragment"
+        android:name="com.example.familytree.com.example.mem.AddMemFragment"
+        android:label="添加成员"
+        tools:layout="@layout/fragment_add_mem" />
+</navigation>

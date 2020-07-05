@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".com.example.mem.AddMemFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextMemName"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:ems="10"
+                android:hint="成员名"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editTextMemSex"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="16dp"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="成员性别"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextGenId" />
+
+            <EditText
+                android:id="@+id/editTextGenId"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="16dp"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="成员所属族谱ID"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextMemName" />
+
+            <EditText
+                android:id="@+id/editTextMemBorn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="16dp"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="成员出生日期"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextMemSex" />
+
+            <EditText
+                android:id="@+id/editTextMemAddress"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="16dp"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="成员出生地"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextMemBorn" />
+
+            <EditText
+                android:id="@+id/editTextPat"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="16dp"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="成员配偶"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextMemAddress" />
+
+            <EditText
+                android:id="@+id/editTextDai"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="16dp"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="成员辈分（第__代）"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextAddress" />
+
+            <EditText
+                android:id="@+id/editTextParents"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="16dp"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="双亲"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextDai" />
+
+            <EditText
+                android:id="@+id/editTextChildren"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="16dp"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="子女"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextParents" />
+
+            <Button
+                android:id="@+id/buttonMemSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="30dp"
+                android:text="添  加"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextChildren" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
